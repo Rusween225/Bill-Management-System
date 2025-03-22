@@ -1,0 +1,14 @@
+.app-container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+  }
+body{
+    background-image: url("../assets/images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

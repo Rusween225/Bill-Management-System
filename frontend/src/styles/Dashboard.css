@@ -1,0 +1,51 @@
+.app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px; /* Adjust as needed */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #111722;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .dashboard-container {
+    flex: 1;
+    margin-left: 250px; /* Should match sidebar width */
+    padding: 20px;
+    color: #0909ed;
+  }
+  
+  .dashboard-container h2 {
+    color: #040404;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .dashboard-container {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sidebar {
+      width: 100%;
+      position: relative;
+    }
+  
+    .dashboard-container {
+      margin-left: 0;
+    }
+  }
+  
+  
